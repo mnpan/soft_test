@@ -67,3 +67,25 @@ TEST( TriBoundary, WorsrCase){
 	ASSERT_EQ( ISOSCELES, Triangle( min, max, max));
 
 }
+
+TEST( TriBoundary, Robust){
+	int min = 1;
+	int min_p = min + 1;
+	int nor = 100;
+	int max = 200;
+	int max_s = max - 1;
+	
+	int min_s = min - 1;
+	int max_p = max + 1;
+	
+	int value[7] = { min_s, min, min_p, nor, max_s, max, max_p};
+
+	for( int i = 0; i < 7; i++){
+		for( int j = 0; j < 7; j++){
+			for( int k = 0; k < 7; k++){
+				ASSERT_EQ( OUT_RANGE, Triangle( value[i], value[j], value[k]));
+			}
+		}
+	}
+
+}
