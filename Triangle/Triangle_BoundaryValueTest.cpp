@@ -82,9 +82,8 @@ TEST( TriBoundary, Robust){
 
 	for( int i = 0; i < 7; i++){
 		for( int j = 0; j < 7; j++){
-			for( int k = 0; k < 7; k++){
-				ASSERT_EQ( OUT_RANGE, Triangle( value[i], value[j], value[k]));
-			}
+			ASSERT_EQ( OUT_RANGE, Triangle( value[i], value[j], value[0]));
+			ASSERT_EQ( OUT_RANGE, Triangle( value[i], value[j], value[6]));
 		}
 	}
 

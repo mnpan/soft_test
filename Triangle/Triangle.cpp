@@ -9,7 +9,7 @@
 using namespace std;
 
 int Triangle( int a, int b, int c){
-	if( (a<1) || (a>200) || (b<1) || (b>200) || (c<0) || (c>200) ){
+	if( (a<1) || (a>200) || (b<1) || (b>200) || (c<1) || (c>200) ){
 		return OUT_RANGE;
 	}
  
