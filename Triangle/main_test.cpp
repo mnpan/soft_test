@@ -1,3 +1,4 @@
+#include "Triangle_BoundaryValueTest.cpp"
 #include <gtest/gtest.h>
 
 int main( int argc, char** argv){
