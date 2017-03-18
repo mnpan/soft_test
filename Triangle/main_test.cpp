@@ -1,6 +1,7 @@
 //#include "Triangle_BoundaryValueTest.cpp"
 //#include "Triangle_EquivalenceClass.cpp"
-#include "Triangle_Edge.cpp"
+//#include "Triangle_Edge.cpp"
+#include "Triangle_DecisionTable.cpp"
 #include <gtest/gtest.h>
 
 int main( int argc, char** argv){
