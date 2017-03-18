@@ -20,7 +20,7 @@ int NextDate( int year, int month, int day){
 		is_leap = false;
 	}
 	
-	if( month < 1 ){
+	if( (month < 1) || (month > 12) || (day < 1)){
 		return INVALID_DATE;
 	}
 	else if( month == 2){
