@@ -43,13 +43,13 @@ TEST( NextBoundary, WorstCase){
 		ASSERT_EQ( -1, NextDate( y[i], m[1], d[3]));
 		ASSERT_EQ( -1, NextDate( y[i], m[1], d[4]));
 		
-		ASSERT_EQ( (y[i]*10000 + m[2]*100 + d[3] + 1), NextDate( y[i], m[2], d[3]));
+		ASSERT_EQ( (y[i]*10000 + (m[2]+1)*100 + 1), NextDate( y[i], m[2], d[3]));
 		ASSERT_EQ( -1, NextDate( y[i], m[2], d[4]));
 		
-		ASSERT_EQ( (y[i]*10000 + m[3]*100 + d[3] + 1), NextDate( y[i], m[3], d[3]));
+		ASSERT_EQ( (y[i]*10000 + (m[3]+1)*100 + 1), NextDate( y[i], m[3], d[3]));
 		ASSERT_EQ( -1, NextDate( y[i], m[3], d[4]));
 		
-		ASSERT_EQ( (y[i]*10000 + m[0]*100 + d[3] + 1), NextDate( y[i], m[4], d[3]));
+		ASSERT_EQ( (y[i]*10000 + m[4]*100 + d[3] + 1), NextDate( y[i], m[4], d[3]));
 		ASSERT_EQ( ((y[i]+1)*10000 + 100 + 1), NextDate( y[i], m[4], d[4]));
 	}
 }

@@ -25,7 +25,7 @@ int NextDate( int year, int month, int day){
 	}
 	else if( month == 2){
 		if( ( is_leap && (day > 29)) || ( !is_leap && (day > 28))){
-			if( day > 30)	return INVALID_DATE;
+			return INVALID_DATE;
 		}
 		m_type = FEB;
 	}
