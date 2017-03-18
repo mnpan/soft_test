@@ -1,4 +1,3 @@
-#include "Triangle.cpp"
 #include <gtest/gtest.h>
 
 TEST( TriEquivalence, WeekNormal){
