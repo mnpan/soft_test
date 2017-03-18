@@ -53,3 +53,34 @@ TEST( NextBoundary, WorstCase){
 		ASSERT_EQ( ((y[i]+1)*10000 + 100 + 1), NextDate( y[i], m[4], d[4]));
 	}
 }
+
+TEST( NextBoundary, Robust){
+	/*** min-, min, min+, nor, max-, max, max+ ***/
+	int y[7] = { 1811, 1812, 1813, 1912, 2011, 2012, 2013};
+	int m[7] = { 0, 1, 2, 6, 11, 12, 13};
+	int d[7] = { 0, 1, 2, 15, 30, 31, 32};
+	
+	/*** Robust Additional Test for Year ***/
+	for( int j = 0; j < 7; j++){
+		for( int k = 0; k < 7; k++){
+			ASSERT_EQ( -1, NextDate( y[0], m[j], d[k]));
+			ASSERT_EQ( -1, NextDate( y[6], m[j], d[k]));
+		}
+	}
+	
+	/*** Robust Additional Test for Month ***/
+	for( int i = 0; i < 7; i++){
+		for( int k = 0; k < 7; k++){
+			ASSERT_EQ( -1, NextDate( y[i], m[0], d[k]));
+			ASSERT_EQ( -1, NextDate( y[i], m[6], d[k]));
+		}
+	}
+	
+	/*** Robust Additional Test for Day ***/
+	for( int i = 0; i < 7; i++){
+		for( int j = 0; j < 7; j++){
+			ASSERT_EQ( -1, NextDate( y[i], m[j], d[0]));
+			ASSERT_EQ( -1, NextDate( y[i], m[j], d[6]));
+		}
+	}
+}
