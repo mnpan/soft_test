@@ -74,9 +74,9 @@ TEST( NextEquivalence, WeekRobust){
 	
 }
 
-TEST( NextEquivalence, WeekRobust){
+TEST( NextEquivalence, StrongRobust){
 	int NVy[4] = { 1995, 1900, 2004, 2000};
-	int NVm[3] = { 2, 4, 6, 8};
+	int NVm[4] = { 2, 4, 6, 8};
 	int NVd[4] = { 15, 29, 30, 31};
 	int RVy[2] = { 1811, 2013};
 	int RVm[2] = { 0, 13};
