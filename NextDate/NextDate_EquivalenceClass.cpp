@@ -56,3 +56,60 @@ TEST( NextEquivalence, StrongNormal){
 		
 	}
 }
+
+TEST( NextEquivalence, WeekRobust){
+	int NVy = 1995;
+	int NVm = 6;
+	int NVd = 15;
+	int RVy[2] = { 1811, 2013};
+	int RVm[2] = { 0, 13};
+	int RVd[2] = { 0, 32};
+	
+	ASSERT_EQ( 19950616, NextDate( NVy, NVm, NVd));
+	for( int i = 0; i < 2; i++){
+		ASSERT_EQ( -1, NextDate( RVy[i], NVm, NVd));
+		ASSERT_EQ( -1, NextDate( NVy, RVm[i], NVd));
+		ASSERT_EQ( -1, NextDate( NVy, NVm, RVd[i]));
+	}
+	
+}
+
+TEST( NextEquivalence, WeekRobust){
+	int NVy[4] = { 1995, 1900, 2004, 2000};
+	int NVm[3] = { 2, 4, 6, 8};
+	int NVd[4] = { 15, 29, 30, 31};
+	int RVy[2] = { 1811, 2013};
+	int RVm[2] = { 0, 13};
+	int RVd[2] = { 0, 32};
+	
+	/*** one invalid input ***/
+	for( int i = 0; i < 2; i++){
+		for( int j = 0; j < 4; j++){
+			for( int k = 0; k < 4; k++){
+				ASSERT_EQ( -1, NextDate( RVy[i], NVm[j], NVd[k]));
+				ASSERT_EQ( -1, NextDate( NVy[j], RVm[i], NVd[k]));
+				ASSERT_EQ( -1, NextDate( NVy[j], NVm[k], RVd[i]));
+			}
+		}
+	}
+	
+	/*** two invalid input **/
+	for( int i = 0; i < 2; i++){
+		for( int j = 0; j < 2; j++){
+			for( int k = 0; k < 4; k++){
+				ASSERT_EQ( -1, NextDate( RVy[i], RVm[j], NVd[k]));
+				ASSERT_EQ( -1, NextDate( RVy[i], NVm[k], RVd[j]));
+				ASSERT_EQ( -1, NextDate( NVy[k], RVm[i], RVd[j]));
+			}
+		}
+	}
+	
+	/*** three invalid input ***/
+	for( int i = 0; i < 2; i++){
+		for( int j = 0; j < 2; j++){
+			for( int k = 0; k < 2; k++){
+				ASSERT_EQ( -1, NextDate( RVy[i], RVm[j], RVd[k]));
+			}
+		}
+	}
+}
