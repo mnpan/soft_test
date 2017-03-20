@@ -1,12 +1,18 @@
 #define OUT_RANGE 0
+#define TERMINAL -1
 
 double Commission( int lock, int stock, int barrel){
-	if( (lock < 1) || (lock > 70)){
+	if( lock == -1){
+		return TERMINAL;
+	}
+	else if( (lock < 1) || (lock > 70)){
 		return OUT_RANGE;
 	}
+	
 	if( (stock < 1) || (stock > 80)){
 		return OUT_RANGE;
 	}
+	
 	if( (barrel < 1) || (barrel > 90)){
 		return OUT_RANGE;
 	}
