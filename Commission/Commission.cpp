@@ -1,6 +1,16 @@
-
+#define OUT_RANGE 0
 
 double Commission( int lock, int stock, int barrel){
+	if( (lock < 1) || (lock > 70)){
+		return OUT_RANGE;
+	}
+	if( (stock < 1) || (stock > 80)){
+		return OUT_RANGE;
+	}
+	if( (barrel < 1) || (barrel > 90)){
+		return OUT_RANGE;
+	}
+	
 	double sales = double(lock*45 + stock*30 + barrel*25);
 	if( sales <= 1000){
 		return (sales*0.1);
