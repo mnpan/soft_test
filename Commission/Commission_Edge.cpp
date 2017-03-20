@@ -18,18 +18,17 @@ TEST( ComEdge, Normal){
 			for( int k = 0; k < 2; k++){
 				ASSERT_EQ( (l[i]*45 + s[j]*30 + b[k]*25)*0.1, Commission( l[i], s[j], b[k]));
 			}
-			ASSERT_EQ( (l[2]*45 + s[i]*30 + b[j]*25)*0.1, Commission( l[2], s[i], b[j]));
-			ASSERT_EQ( (l[3]*45 + s[i]*30 + b[j]*25)*0.1, Commission( l[3], s[i], b[j]));
-			ASSERT_EQ( (l[i]*45 + s[2]*30 + b[j]*25)*0.1, Commission( l[i], s[2], b[j]));
-			ASSERT_EQ( (l[i]*45 + s[3]*30 + b[j]*25)*0.1, Commission( l[i], s[3], b[j]));
-			ASSERT_EQ( (l[i]*45 + s[j]*30 + b[2]*25)*0.1, Commission( l[i], s[j], b[2]));
-			ASSERT_EQ( (l[i]*45 + s[j]*30 + b[3]*25)*0.1, Commission( l[i], s[j], b[3]));
+			for( int k = 2; k <= 4; k++){
+				ASSERT_EQ( (l[k]*45 + s[i]*30 + b[j]*25)*0.1, Commission( l[k], s[i], b[j]));
+				ASSERT_EQ( (l[i]*45 + s[k]*30 + b[j]*25)*0.1, Commission( l[i], s[k], b[j]));
+				ASSERT_EQ( (l[i]*45 + s[j]*30 + b[k]*25)*0.1, Commission( l[i], s[j], b[k]));
+			}
 		}
 	}
 	
 	/*** T2: (1)C2/C3+C2/C3+C1 (2)C2+C2+C2 ***/
-	for( int i = 2; i <= 3; i++){
-		for( int j = 2; j <= 3; j++){
+	for( int i = 2; i <= 4; i++){
+		for( int j = 2; j <= 4; j++){
 			for( int k = 0; k < 2; k++){
 				ASSERT_EQ( 100 + ((l[i]*45 + s[j]*30 + b[k]*25)-1000)*0.15, Commission( l[i], s[j], b[k]));
 				ASSERT_EQ( 100 + ((l[i]*45 + s[k]*30 + b[j]*25)-1000)*0.15, Commission( l[i], s[k], b[j]));
@@ -39,5 +38,30 @@ TEST( ComEdge, Normal){
 	}
 	ASSERT_EQ( 100 + ((l[2]*45 + s[2]*30 + b[2]*25)-1000)*0.15, Commission( l[2], s[2], b[2]));
 	
+	/*** T3: (1)C2/C3+C2/C3+C2/C3 - C2+C2+C2 ***/
+	for( int i = 2; i <= 4; i++){
+		for( int j = 2; j <= 4; j++){
+			for( int k = 2; k <= 4; k++){
+				if( i==2 && j==2 && k==2)	continue;
+				ASSERT_EQ( 220 + ((l[i]*45 + s[j]*30 + b[k]*25)-1800)*0.2, Commission( l[i], s[j], b[k]));
+			}
+		}
+	}
 	
+	/*** T3: (2)with C4 ***/
+	for( int i = 0; i < 5; i++){
+		for( int j = 0; j < 5; j++){
+			for( int k = 0; k < 5; k++){
+				ASSERT_EQ( 220 + ((l[i+5]*45 + s[j]*30 + b[k]*25)-1800)*0.2, Commission( l[i+5], s[j], b[k]));
+				ASSERT_EQ( 220 + ((l[i]*45 + s[j+5]*30 + b[k]*25)-1800)*0.2, Commission( l[i], s[j+5], b[k]));
+				ASSERT_EQ( 220 + ((l[i]*45 + s[j]*30 + b[k+5]*25)-1800)*0.2, Commission( l[i], s[j], b[k+5]));
+				
+				ASSERT_EQ( 220 + ((l[i+5]*45 + s[j+5]*30 + b[k]*25)-1800)*0.2, Commission( l[i+5], s[j+5], b[k]));
+				ASSERT_EQ( 220 + ((l[i]*45 + s[j+5]*30 + b[k+5]*25)-1800)*0.2, Commission( l[i], s[j+5], b[k+5]));
+				ASSERT_EQ( 220 + ((l[i+5]*45 + s[j]*30 + b[k+5]*25)-1800)*0.2, Commission( l[i+5], s[j], b[k+5]));
+				
+				ASSERT_EQ( 220 + ((l[i+5]*45 + s[j+5]*30 + b[k+5]*25)-1800)*0.2, Commission( l[i+5], s[j+5], b[k+5]));
+			}
+		}
+	}
 }
