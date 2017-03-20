@@ -89,3 +89,48 @@ TEST( ComBoundary, WorseCase){
 	ASSERT_EQ( 220 + ((l[2]*45 + s[2]*30 + b[2]*25)-1800)*0.2, Commission( l[2], s[2], b[2]));
 	
 }
+
+TEST( ComBoundary, Robust){
+	/*** Normal Value: min, min+, nor, max-, max ***/
+	int l[5] = { 1, 2, 35, 69, 70};
+	int s[5] = { 1, 2, 40, 79, 80};
+	int b[5] = { 1, 2, 45, 89, 90};
+	
+	/*** Robust Value: min-, max+ ***/
+	int RVl[2] = { 0, 71};
+	int RVs[2] = { 0, 81};
+	int RVb[2] = { 0, 91};
+	
+	for( int i = 0; i < 5; i++){
+		for( int j = 0; j < 5; j++){
+			ASSERT_EQ( OUT_RANGE, Commission( RVl[0], s[i], b[j]));
+			ASSERT_EQ( OUT_RANGE, Commission( RVl[1], s[i], b[j]));
+			ASSERT_EQ( OUT_RANGE, Commission( l[i], RVs[0], b[j]));
+			ASSERT_EQ( OUT_RANGE, Commission( l[i], RVs[1], b[j]));
+			ASSERT_EQ( OUT_RANGE, Commission( l[i], s[j], RVb[0]));
+			ASSERT_EQ( OUT_RANGE, Commission( l[i], s[j], RVb[1]));
+		}
+		ASSERT_EQ( OUT_RANGE, Commission( RVl[0], RVs[0], b[i]));
+		ASSERT_EQ( OUT_RANGE, Commission( RVl[0], RVs[1], b[i]));
+		ASSERT_EQ( OUT_RANGE, Commission( RVl[1], RVs[0], b[i]));
+		ASSERT_EQ( OUT_RANGE, Commission( RVl[1], RVs[1], b[i]));
+		
+		ASSERT_EQ( OUT_RANGE, Commission( RVl[0], s[i], RVb[0]));
+		ASSERT_EQ( OUT_RANGE, Commission( RVl[0], s[i], RVb[1]));
+		ASSERT_EQ( OUT_RANGE, Commission( RVl[1], s[i], RVb[0]));
+		ASSERT_EQ( OUT_RANGE, Commission( RVl[1], s[i], RVb[1]));
+		
+		ASSERT_EQ( OUT_RANGE, Commission( l[i], RVs[0], RVb[0]));
+		ASSERT_EQ( OUT_RANGE, Commission( l[i], RVs[0], RVb[1]));
+		ASSERT_EQ( OUT_RANGE, Commission( l[i], RVs[1], RVb[0]));
+		ASSERT_EQ( OUT_RANGE, Commission( l[i], RVs[1], RVb[1]));
+	}
+		ASSERT_EQ( OUT_RANGE, Commission( RVl[0], RVs[0], RVb[0]));
+		ASSERT_EQ( OUT_RANGE, Commission( RVl[0], RVs[0], RVb[1]));
+		ASSERT_EQ( OUT_RANGE, Commission( RVl[0], RVs[1], RVb[0]));
+		ASSERT_EQ( OUT_RANGE, Commission( RVl[0], RVs[1], RVb[1]));
+		ASSERT_EQ( OUT_RANGE, Commission( RVl[1], RVs[0], RVb[0]));
+		ASSERT_EQ( OUT_RANGE, Commission( RVl[1], RVs[0], RVb[1]));
+		ASSERT_EQ( OUT_RANGE, Commission( RVl[1], RVs[1], RVb[0]));
+		ASSERT_EQ( OUT_RANGE, Commission( RVl[1], RVs[1], RVb[1]));
+}
