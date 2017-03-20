@@ -36,12 +36,12 @@ TEST( ComEquivalence, WeakRobust){
 	int RVs[2] = { 0, 81};
 	int RVb[2] = { 0, 91};
 	
-	ASSERT_EQ( OUT_RANGE, Commission( RVl[0], NVs[0], NVb[1]));
+	ASSERT_EQ( OUT_RANGED, Commission( RVl[0], NVs[0], NVb[1]));
 	ASSERT_EQ( TERMINAL, Commission( NVl[2], RVs[0], RVb[1]));
-	ASSERT_EQ( OUT_RANGE, Commission( RVl[1], NVs[1], NVb[0]));
-	ASSERT_EQ( OUT_RANGE, Commission( NVl[0], RVs[1], RVb[0]));
+	ASSERT_EQ( OUT_RANGED, Commission( RVl[1], NVs[1], NVb[0]));
+	ASSERT_EQ( OUT_RANGED, Commission( NVl[0], RVs[1], RVb[0]));
 	ASSERT_EQ( 870, Commission( NVl[1], NVs[0], NVb[1]));	//sales = 5550
-	ASSERT_EQ( OUT_RANGE, Commission( RVl[2], NVs[1], NVb[0]));
+	ASSERT_EQ( OUT_RANGED, Commission( RVl[2], NVs[1], NVb[0]));
 	
 }
 
@@ -67,13 +67,13 @@ TEST( ComEquivalence, StrongRobust){
 	/*** one robust value ***/
 	for( int j = 0; j < 2; j++){
 		for( int k = 0; k < 2; k++){
-			ASSERT_EQ( OUT_RANGE, Commission( RVl[0], NVs[j], NVb[k]));
-			ASSERT_EQ( OUT_RANGE, Commission( RVl[1], NVs[j], NVb[k]));
-			ASSERT_EQ( OUT_RANGE, Commission( RVl[2], NVs[j], NVb[k]));
+			ASSERT_EQ( OUT_RANGED, Commission( RVl[0], NVs[j], NVb[k]));
+			ASSERT_EQ( OUT_RANGED, Commission( RVl[1], NVs[j], NVb[k]));
+			ASSERT_EQ( OUT_RANGED, Commission( RVl[2], NVs[j], NVb[k]));
 			
 			for( int i = 0; i < 2; i++){
-				ASSERT_EQ( OUT_RANGE, Commission( NVl[j], RVs[i], NVb[k]));
-				ASSERT_EQ( OUT_RANGE, Commission( NVl[j], NVs[i], RVb[0]));
+				ASSERT_EQ( OUT_RANGED, Commission( NVl[j], RVs[i], NVb[k]));
+				ASSERT_EQ( OUT_RANGED, Commission( NVl[j], NVs[i], RVb[0]));
 			}
 		}
 	}
@@ -82,12 +82,12 @@ TEST( ComEquivalence, StrongRobust){
 	for( int j = 0; j < 2; j++){
 		for( int k = 0; k < 2; k++){
 			for( int i = 0; i < 3; i++){
-				ASSERT_EQ( OUT_RANGE, Commission( RVl[i], RVs[j], NVb[k]));
-				ASSERT_EQ( OUT_RANGE, Commission( RVl[i], NVs[j], RVb[k]));
+				ASSERT_EQ( OUT_RANGED, Commission( RVl[i], RVs[j], NVb[k]));
+				ASSERT_EQ( OUT_RANGED, Commission( RVl[i], NVs[j], RVb[k]));
 			}
 			for( int i = 0; i < 2; i++){
-				ASSERT_EQ( OUT_RANGE, Commission( NVl[i], RVs[j], RVb[k]));
-				ASSERT_EQ( OUT_RANGE, Commission( NVl[i], RVs[k], RVb[k]));
+				ASSERT_EQ( OUT_RANGED, Commission( NVl[i], RVs[j], RVb[k]));
+				ASSERT_EQ( OUT_RANGED, Commission( NVl[i], RVs[k], RVb[k]));
 			}
 		}
 	}
@@ -96,7 +96,7 @@ TEST( ComEquivalence, StrongRobust){
 	for( int j = 0; j < 2; j++){
 		for( int k = 0; k < 2; k++){
 			for( int i = 0; i < 3; i++){
-				ASSERT_EQ( OUT_RANGE, Commission( RVl[i], RVs[j], RVb[k]));
+				ASSERT_EQ( OUT_RANGED, Commission( RVl[i], RVs[j], RVb[k]));
 			}
 		}
 	}
