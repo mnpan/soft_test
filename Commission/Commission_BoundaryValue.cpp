@@ -24,3 +24,62 @@ TEST( ComBoundary, Normal){
 	ASSERT_EQ( 946, Commission( l[3], s[2], b[2]));	//sales = 5430
 	ASSERT_EQ( 955, Commission( l[4], s[2], b[2]));	//sales = 5475
 }
+
+TEST( ComBoundary, WorseCase){
+	/*** min, min+, nor, max-, max ***/
+	int l[5] = { 1, 2, 35, 69, 70};
+	int s[5] = { 1, 2, 40, 79, 80};
+	int b[5] = { 1, 2, 45, 89, 90};
+	
+	/*** T1: 1 <= sales <= 1000 : min/min+ + min/min+ + min/min+ ***/
+	for( int i = 0; i < 2; i++){
+		for( int j = 0; j < 2; j++){
+			for( int k = 0; k < 2; k++){
+				ASSERT_EQ( (l[i]*45 + s[j]*30 + b[k]*25)*0.1, Commission( l[i], s[j], b[k]));
+			}
+		}
+	}
+	
+	/*** T2: 1000 < sales <= 1800 :nor+ + min/min+ + min/min+ ***/
+	for( int j = 0; j < 2; j++){
+		for( int k = 0; k < 2; k++){
+			ASSERT_EQ( 100 + ((l[2]*45 + s[j]*30 + b[k]*25)-1000)*0.15, Commission( l[2], s[j], b[k]));
+			ASSERT_EQ( 100 + ((l[j]*45 + s[2]*30 + b[k]*25)-1000)*0.15, Commission( l[j], s[2], b[k]));
+			ASSERT_EQ( 100 + ((l[j]*45 + s[k]*30 + b[2]*25)-1000)*0.15, Commission( l[j], s[k], b[2]));
+		}
+	}
+	
+	/*** T3: sales > 1800: (1)max/max- + any (2)nor + nor + any ***/
+	/*for( int j = 0; j < 3; j++){
+		for( int k = 0; k < 3; k++){
+			ASSERT_EQ( 220 + ((l[3]*45 + s[j]*30 + b[k]*25)-1800)*0.2, Commission( l[3], s[j], b[k]));
+			ASSERT_EQ( 220 + ((l[4]*45 + s[j]*30 + b[k]*25)-1800)*0.2, Commission( l[4], s[j], b[k]));
+			ASSERT_EQ( 220 + ((l[j]*45 + s[3]*30 + b[k]*25)-1800)*0.2, Commission( l[j], s[3], b[k]));
+			ASSERT_EQ( 220 + ((l[j]*45 + s[4]*30 + b[k]*25)-1800)*0.2, Commission( l[j], s[4], b[k]));
+			ASSERT_EQ( 220 + ((l[j]*45 + s[k]*30 + b[3]*25)-1800)*0.2, Commission( l[j], s[k], b[3]));
+			ASSERT_EQ( 220 + ((l[j]*45 + s[k]*30 + b[4]*25)-1800)*0.2, Commission( l[j], s[k], b[4]));
+		}
+		ASSERT_EQ( 220 + ((l[3]*45 + s[3]*30 + b[j]*25)-1800)*0.2, Commission( l[3], s[3], b[j]));
+		ASSERT_EQ( 220 + ((l[3]*45 + s[4]*30 + b[j]*25)-1800)*0.2, Commission( l[3], s[4], b[j]));
+		ASSERT_EQ( 220 + ((l[4]*45 + s[3]*30 + b[j]*25)-1800)*0.2, Commission( l[4], s[3], b[j]));
+		ASSERT_EQ( 220 + ((l[4]*45 + s[4]*30 + b[j]*25)-1800)*0.2, Commission( l[4], s[4], b[j]));
+		ASSERT_EQ( 220 + ((l[3]*45 + s[j]*30 + b[3]*25)-1800)*0.2, Commission( l[3], s[j], b[3]));
+		ASSERT_EQ( 220 + ((l[3]*45 + s[j]*30 + b[4]*25)-1800)*0.2, Commission( l[3], s[j], b[4]));
+		ASSERT_EQ( 220 + ((l[4]*45 + s[j]*30 + b[3]*25)-1800)*0.2, Commission( l[4], s[j], b[3]));
+		ASSERT_EQ( 220 + ((l[4]*45 + s[j]*30 + b[4]*25)-1800)*0.2, Commission( l[4], s[j], b[4]));
+		ASSERT_EQ( 220 + ((l[j]*45 + s[3]*30 + b[3]*25)-1800)*0.2, Commission( l[j], s[3], b[3]));
+		ASSERT_EQ( 220 + ((l[j]*45 + s[3]*30 + b[4]*25)-1800)*0.2, Commission( l[j], s[3], b[4]));
+		ASSERT_EQ( 220 + ((l[j]*45 + s[4]*30 + b[3]*25)-1800)*0.2, Commission( l[j], s[4], b[3]));
+		ASSERT_EQ( 220 + ((l[j]*45 + s[4]*30 + b[4]*25)-1800)*0.2, Commission( l[j], s[4], b[4]));
+	}
+	ASSERT_EQ( 220 + ((l[3]*45 + s[3]*30 + b[3]*25)-1800)*0.2, Commission( l[3], s[3], b[3]));
+	ASSERT_EQ( 220 + ((l[3]*45 + s[3]*30 + b[4]*25)-1800)*0.2, Commission( l[3], s[3], b[4]));
+	ASSERT_EQ( 220 + ((l[3]*45 + s[4]*30 + b[3]*25)-1800)*0.2, Commission( l[3], s[4], b[3]));
+	ASSERT_EQ( 220 + ((l[3]*45 + s[4]*30 + b[4]*25)-1800)*0.2, Commission( l[3], s[4], b[4]));
+	ASSERT_EQ( 220 + ((l[4]*45 + s[3]*30 + b[3]*25)-1800)*0.2, Commission( l[4], s[3], b[3]));
+	ASSERT_EQ( 220 + ((l[4]*45 + s[3]*30 + b[4]*25)-1800)*0.2, Commission( l[4], s[3], b[4]));
+	ASSERT_EQ( 220 + ((l[4]*45 + s[4]*30 + b[3]*25)-1800)*0.2, Commission( l[4], s[4], b[3]));
+	ASSERT_EQ( 220 + ((l[4]*45 + s[4]*30 + b[4]*25)-1800)*0.2, Commission( l[4], s[4], b[4]));
+	*/
+	
+}
