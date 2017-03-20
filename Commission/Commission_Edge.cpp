@@ -65,3 +65,47 @@ TEST( ComEdge, Normal){
 		}
 	}
 }
+
+TEST( ComEdge, Robust){
+	int NVl[11] = { 1, 2, 14, 15, 16, 59, 60, 61, 69, 70, -1 };
+	int NVs[10] = { 1, 2, 19, 20, 21, 59, 60, 61, 79, 80};
+	int NVb[10] = { 1, 2, 24, 25, 26, 69, 70, 71, 89, 90};
+	
+	int RVl[3] = { -2, 0, 71};
+	int RVs[2] = { 0, 81};
+	int RVb[2] = { 0, 91};
+	
+	/*** one robust value ***/
+	for( int k = 0; k < 10; k++){
+		for( int j = 0; j < 10; j++){
+			for( int i = 0; i < 2; i++){
+				ASSERT_EQ( OUT_RANGE, Commission( RVl[i], NVs[j], NVb[k]));
+				ASSERT_EQ( OUT_RANGE, Commission( NVl[j], RVs[i], NVb[k]));
+				ASSERT_EQ( OUT_RANGE, Commission( NVl[j], NVs[k], RVb[i]));
+			}
+			ASSERT_EQ( OUT_RANGE, Commission( RVl[2], NVs[j], NVb[k]));
+		}
+	}
+	
+	/*** two robust value ***/
+	for( int k = 0; k < 10; k++){
+		for( int j = 0; j < 2; j++){
+			for( int i = 0; i < 2; i++){
+				ASSERT_EQ( OUT_RANGE, Commission( RVl[i], RVs[j], NVb[k]));
+				ASSERT_EQ( OUT_RANGE, Commission( NVl[k], RVs[i], RVb[j]));
+				ASSERT_EQ( OUT_RANGE, Commission( RVl[i], NVs[k], RVb[j]));
+			}
+			ASSERT_EQ( OUT_RANGE, Commission( RVl[2], RVs[j], NVb[k]));
+			ASSERT_EQ( OUT_RANGE, Commission( RVl[2], NVs[k], RVb[j]));
+		}
+	}
+	
+	/*** three robust value ***/
+	for( int i = 0; i < 3; i++){
+		for( int j = 0; j < 2; j++){
+			for( int k = 0; k < 2; k++){
+				ASSERT_EQ( OUT_RANGE, Commission( RVl[i], RVs[j], RVb[k]));
+			}
+		}
+	}
+}
