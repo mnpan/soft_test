@@ -1,0 +1,1130 @@
+        -:    0:Source:Commission/Commission_Edge.cpp
+        -:    0:Graph:../main_test.gcno
+        -:    0:Data:../main_test.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*EOF*/
+        -:    2:/*EOF*/
+function _ZN19ComEdge_Normal_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN19ComEdge_Normal_TestD2Ev called 1 returned 100% blocks executed 80%
+function _ZN19ComEdge_Normal_Test8TestBodyEv called 1 returned 100% blocks executed 39%
+function _ZN19ComEdge_Normal_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:    3:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+branch  5 taken 100% (fallthrough)
+branch  6 taken 0% (throw)
+call    7 returned 100%
+branch  8 taken 100% (fallthrough)
+branch  9 taken 0% (throw)
+call   10 returned 100%
+branch 11 taken 100% (fallthrough)
+branch 12 taken 0% (throw)
+call   13 returned 100%
+branch 14 taken 100% (fallthrough)
+branch 15 taken 0% (throw)
+call   16 returned 100%
+branch 17 taken 100% (fallthrough)
+branch 18 taken 0% (throw)
+call   19 returned 100%
+call   20 never executed
+call   21 never executed
+call   22 never executed
+call   23 never executed
+call   24 returned 100%
+call   25 returned 100%
+call   26 returned 100%
+branch 27 taken 100% (fallthrough)
+branch 28 taken 0% (throw)
+branch 29 taken 0% (fallthrough)
+branch 30 taken 100%
+call   31 never executed
+call   32 returned 100%
+        1:    4:/*EOF*/
+        1:    5:/*EOF*/
+        1:    6:/*EOF*/
+        -:    7:/*EOF*/
+        -:    8:/*EOF*/
+       11:    9:/*EOF*/
+branch  0 taken 91% (fallthrough)
+branch  1 taken 9%
+      110:   10:/*EOF*/
+branch  0 taken 91% (fallthrough)
+branch  1 taken 9%
+      100:   11:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        -:   12:/*EOF*/
+        -:   13:/*EOF*/
+        -:   14:/*EOF*/
+        -:   15:/*EOF*/
+        3:   16:/*EOF*/
+branch  0 taken 67% (fallthrough)
+branch  1 taken 33%
+        6:   17:/*EOF*/
+branch  0 taken 67% (fallthrough)
+branch  1 taken 33%
+       12:   18:/*EOF*/
+branch  0 taken 67% (fallthrough)
+branch  1 taken 33%
+        8:   19:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        -:   20:/*EOF*/
+       16:   21:/*EOF*/
+branch  0 taken 75% (fallthrough)
+branch  1 taken 25%
+       12:   22:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+       12:   23:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+       12:   24:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        -:   25:/*EOF*/
+        -:   26:/*EOF*/
+        -:   27:/*EOF*/
+        -:   28:/*EOF*/
+        -:   29:/*EOF*/
+        4:   30:/*EOF*/
+branch  0 taken 75% (fallthrough)
+branch  1 taken 25%
+       12:   31:/*EOF*/
+branch  0 taken 75% (fallthrough)
+branch  1 taken 25%
+       27:   32:/*EOF*/
+branch  0 taken 67% (fallthrough)
+branch  1 taken 33%
+       18:   33:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+       18:   34:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+       18:   35:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        -:   36:/*EOF*/
+        -:   37:/*EOF*/
+        -:   38:/*EOF*/
+        1:   39:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        -:   40:/*EOF*/
+        -:   41:/*EOF*/
+        4:   42:/*EOF*/
+branch  0 taken 75% (fallthrough)
+branch  1 taken 25%
+       12:   43:/*EOF*/
+branch  0 taken 75% (fallthrough)
+branch  1 taken 25%
+       36:   44:/*EOF*/
+branch  0 taken 75% (fallthrough)
+branch  1 taken 25%
+       27:   45:/*EOF*/
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+branch  2 taken 33% (fallthrough)
+branch  3 taken 67%
+branch  4 taken 33% (fallthrough)
+branch  5 taken 67%
+       26:   46:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        -:   47:/*EOF*/
+        -:   48:/*EOF*/
+        -:   49:/*EOF*/
+        -:   50:/*EOF*/
+        -:   51:/*EOF*/
+        6:   52:/*EOF*/
+branch  0 taken 83% (fallthrough)
+branch  1 taken 17%
+       30:   53:/*EOF*/
+branch  0 taken 83% (fallthrough)
+branch  1 taken 17%
+      150:   54:/*EOF*/
+branch  0 taken 83% (fallthrough)
+branch  1 taken 17%
+      125:   55:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+      125:   56:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+      125:   57:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        -:   58:/*EOF*/
+      125:   59:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+      125:   60:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+      125:   61:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        -:   62:/*EOF*/
+      125:   63:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        -:   64:/*EOF*/
+        -:   65:/*EOF*/
+        -:   66:/*EOF*/
+        -:   67:/*EOF*/
+        -:   68:/*EOF*/
+function _ZN19ComEdge_Robust_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN19ComEdge_Robust_TestD2Ev called 1 returned 100% blocks executed 80%
+function _ZN19ComEdge_Robust_Test8TestBodyEv called 1 returned 100% blocks executed 39%
+function _ZN19ComEdge_Robust_TestC2Ev called 1 returned 100% blocks executed 100%
+        5:   69:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+call    4 returned 100%
+branch  5 taken 100% (fallthrough)
+branch  6 taken 0% (throw)
+call    7 returned 100%
+branch  8 taken 100% (fallthrough)
+branch  9 taken 0% (throw)
+call   10 returned 100%
+branch 11 taken 100% (fallthrough)
+branch 12 taken 0% (throw)
+call   13 returned 100%
+branch 14 taken 100% (fallthrough)
+branch 15 taken 0% (throw)
+call   16 returned 100%
+branch 17 taken 100% (fallthrough)
+branch 18 taken 0% (throw)
+call   19 returned 100%
+call   20 never executed
+call   21 never executed
+call   22 never executed
+call   23 returned 100%
+call   24 returned 100%
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 0% (fallthrough)
+branch 29 taken 100%
+call   30 never executed
+call   31 returned 100%
+        1:   70:/*EOF*/
+        1:   71:/*EOF*/
+        1:   72:/*EOF*/
+        -:   73:/*EOF*/
+        1:   74:/*EOF*/
+        1:   75:/*EOF*/
+        1:   76:/*EOF*/
+        -:   77:/*EOF*/
+        -:   78:/*EOF*/
+       11:   79:/*EOF*/
+branch  0 taken 91% (fallthrough)
+branch  1 taken 9%
+      110:   80:/*EOF*/
+branch  0 taken 91% (fallthrough)
+branch  1 taken 9%
+      300:   81:/*EOF*/
+branch  0 taken 67% (fallthrough)
+branch  1 taken 33%
+      200:   82:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+      200:   83:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+      200:   84:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        -:   85:/*EOF*/
+      100:   86:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        -:   87:/*EOF*/
+        -:   88:/*EOF*/
+        -:   89:/*EOF*/
+        -:   90:/*EOF*/
+       11:   91:/*EOF*/
+branch  0 taken 91% (fallthrough)
+branch  1 taken 9%
+       30:   92:/*EOF*/
+branch  0 taken 67% (fallthrough)
+branch  1 taken 33%
+       60:   93:/*EOF*/
+branch  0 taken 67% (fallthrough)
+branch  1 taken 33%
+       40:   94:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+       40:   95:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+       40:   96:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        -:   97:/*EOF*/
+       20:   98:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+       20:   99:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        -:  100:/*EOF*/
+        -:  101:/*EOF*/
+        -:  102:/*EOF*/
+        -:  103:/*EOF*/
+        4:  104:/*EOF*/
+branch  0 taken 75% (fallthrough)
+branch  1 taken 25%
+        9:  105:/*EOF*/
+branch  0 taken 67% (fallthrough)
+branch  1 taken 33%
+       18:  106:/*EOF*/
+branch  0 taken 67% (fallthrough)
+branch  1 taken 33%
+       12:  107:/*EOF*/
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+branch  5 taken 0% (fallthrough)
+branch  6 taken 100%
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+call   25 returned 100%
+branch 26 taken 100% (fallthrough)
+branch 27 taken 0% (throw)
+branch 28 taken 100%
+branch 29 taken 0%
+call   30 never executed
+call   31 never executed
+call   32 never executed

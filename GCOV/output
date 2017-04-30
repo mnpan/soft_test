@@ -1,0 +1,152 @@
+File 'main_test.cpp'
+Lines executed:100.00% of 4
+Branches executed:100.00% of 4
+Taken at least once:50.00% of 4
+Calls executed:100.00% of 3
+Creating 'main_test.cpp.gcov'
+
+File '/home/mnpan/1052Testing/googletest-master/googletest/include/gtest/internal/gtest-internal.h'
+Lines executed:71.43% of 7
+Branches executed:50.00% of 120
+Taken at least once:25.00% of 120
+Calls executed:37.55% of 237
+Creating 'gtest-internal.h.gcov'
+
+File '/usr/include/c++/5/iostream'
+Lines executed:100.00% of 1
+No branches
+Calls executed:100.00% of 2
+Creating 'iostream.gcov'
+
+File 'Triangle/Triangle_BoundaryValueTest.cpp'
+Lines executed:100.00% of 66
+Branches executed:43.12% of 886
+Taken at least once:21.78% of 886
+Calls executed:34.04% of 617
+Creating 'Triangle_BoundaryValueTest.cpp.gcov'
+
+File 'Triangle/Triangle_EquivalenceClass.cpp'
+Lines executed:100.00% of 78
+Branches executed:46.21% of 870
+Taken at least once:25.06% of 870
+Calls executed:36.36% of 583
+Creating 'Triangle_EquivalenceClass.cpp.gcov'
+
+File 'Triangle/Triangle_Edge.cpp'
+Lines executed:100.00% of 26
+Branches executed:53.13% of 256
+Taken at least once:32.03% of 256
+Calls executed:40.48% of 168
+Creating 'Triangle_Edge.cpp.gcov'
+
+File 'Triangle/Triangle_DecisionTable.cpp'
+Lines executed:100.00% of 9
+Branches executed:44.83% of 174
+Taken at least once:22.41% of 174
+Calls executed:35.38% of 130
+Creating 'Triangle_DecisionTable.cpp.gcov'
+
+File 'NextDate/NextDate_BoundaryValueTest.cpp'
+Lines executed:100.00% of 53
+Branches executed:45.14% of 700
+Taken at least once:23.86% of 700
+Calls executed:35.94% of 473
+Creating 'NextDate_BoundaryValueTest.cpp.gcov'
+
+File 'NextDate/NextDate_EquivalenceClass.cpp'
+Lines executed:100.00% of 70
+Branches executed:47.61% of 710
+Taken at least once:26.20% of 710
+Calls executed:37.58% of 479
+Creating 'NextDate_EquivalenceClass.cpp.gcov'
+
+File 'NextDate/NextDate_Edge.cpp'
+Lines executed:86.67% of 90
+Branches executed:40.17% of 727
+Taken at least once:23.25% of 727
+Calls executed:29.07% of 454
+Creating 'NextDate_Edge.cpp.gcov'
+
+File 'NextDate/NextDate_DecisionTable.cpp'
+Lines executed:100.00% of 22
+Branches executed:43.75% of 320
+Taken at least once:22.81% of 320
+Calls executed:34.58% of 214
+Creating 'NextDate_DecisionTable.cpp.gcov'
+
+File 'Commission/Commission_BoundaryValue.cpp'
+Lines executed:100.00% of 100
+Branches executed:42.38% of 1562
+Taken at least once:21.83% of 1562
+Calls executed:33.14% of 1032
+Creating 'Commission_BoundaryValue.cpp.gcov'
+
+File 'Commission/Commission_EquivalenceClass.cpp'
+Lines executed:100.00% of 62
+Branches executed:48.81% of 586
+Taken at least once:26.96% of 586
+Calls executed:38.90% of 401
+Creating 'Commission_EquivalenceClass.cpp.gcov'
+
+File 'Commission/Commission_Edge.cpp'
+Lines executed:100.00% of 63
+Branches executed:47.91% of 622
+Taken at least once:28.30% of 622
+Calls executed:35.05% of 388
+Creating 'Commission_Edge.cpp.gcov'
+
+File '/home/mnpan/1052Testing/googletest-master/googletest/include/gtest/gtest-printers.h'
+Lines executed:0.00% of 26
+Branches executed:0.00% of 20
+Taken at least once:0.00% of 20
+Calls executed:0.00% of 34
+Creating 'gtest-printers.h.gcov'
+
+File '/home/mnpan/1052Testing/googletest-master/googletest/include/gtest/gtest.h'
+Lines executed:65.00% of 20
+Branches executed:28.57% of 28
+Taken at least once:14.29% of 28
+Calls executed:28.21% of 39
+Creating 'gtest.h.gcov'
+
+File '/home/mnpan/1052Testing/googletest-master/googletest/include/gtest/internal/gtest-port.h'
+Lines executed:77.78% of 9
+Branches executed:75.00% of 16
+Taken at least once:37.50% of 16
+Calls executed:57.14% of 7
+Creating 'gtest-port.h.gcov'
+
+File 'Commission/Commission.cpp'
+Lines executed:100.00% of 15
+Branches executed:100.00% of 18
+Taken at least once:100.00% of 18
+No calls
+Creating 'Commission.cpp.gcov'
+
+File 'NextDate/NextDate.cpp'
+Lines executed:100.00% of 36
+Branches executed:100.00% of 56
+Taken at least once:98.21% of 56
+No calls
+Creating 'NextDate.cpp.gcov'
+
+File '/home/mnpan/1052Testing/googletest-master/googletest/include/gtest/gtest-message.h'
+Lines executed:100.00% of 1
+Branches executed:100.00% of 2
+Taken at least once:50.00% of 2
+Calls executed:100.00% of 1
+Creating 'gtest-message.h.gcov'
+
+File 'Triangle/Triangle.cpp'
+Lines executed:100.00% of 10
+Branches executed:100.00% of 28
+Taken at least once:100.00% of 28
+No calls
+Creating 'Triangle.cpp.gcov'
+
+File '/usr/include/c++/5/bits/ios_base.h'
+Lines executed:100.00% of 2
+No branches
+No calls
+Creating 'ios_base.h.gcov'
+

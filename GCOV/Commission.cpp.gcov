@@ -1,0 +1,52 @@
+        -:    0:Source:Commission/Commission.cpp
+        -:    0:Graph:../main_test.gcno
+        -:    0:Data:../main_test.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*EOF*/
+        -:    2:/*EOF*/
+        -:    3:/*EOF*/
+function _Z10Commissioniii called 2447 returned 100% blocks executed 100%
+     2447:    4:/*EOF*/
+     2447:    5:/*EOF*/
+branch  0 taken 5% (fallthrough)
+branch  1 taken 95%
+      122:    6:/*EOF*/
+        -:    7:/*EOF*/
+     2325:    8:/*EOF*/
+branch  0 taken 84% (fallthrough)
+branch  1 taken 16%
+branch  2 taken 11% (fallthrough)
+branch  3 taken 89%
+      581:    9:/*EOF*/
+        -:   10:/*EOF*/
+        -:   11:/*EOF*/
+     1744:   12:/*EOF*/
+branch  0 taken 90% (fallthrough)
+branch  1 taken 10%
+branch  2 taken 11% (fallthrough)
+branch  3 taken 89%
+      335:   13:/*EOF*/
+        -:   14:/*EOF*/
+        -:   15:/*EOF*/
+     1409:   16:/*EOF*/
+branch  0 taken 91% (fallthrough)
+branch  1 taken 9%
+branch  2 taken 10% (fallthrough)
+branch  3 taken 90%
+      258:   17:/*EOF*/
+        -:   18:/*EOF*/
+        -:   19:/*EOF*/
+     1151:   20:/*EOF*/
+     1151:   21:/*EOF*/
+branch  0 taken 5% (fallthrough)
+branch  1 taken 95%
+       52:   22:/*EOF*/
+        -:   23:/*EOF*/
+     1099:   24:/*EOF*/
+branch  0 taken 6% (fallthrough)
+branch  1 taken 94%
+       68:   25:/*EOF*/
+        -:   26:/*EOF*/
+        -:   27:/*EOF*/
+     1031:   28:/*EOF*/
