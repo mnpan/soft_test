@@ -9,26 +9,23 @@
 using namespace std;
 
 int Triangle( int a, int b, int c){
+	int result = 0;
 	if( (a<1) || (a>200) || (b<1) || (b>200) || (c<1) || (c>200) ){
-		return OUT_RANGE;
+		result = OUT_RANGE;
 	}
- 
-	if( (a < b+c) && (b < a+c) && (c < a+b) ){
+ 	else if( (a < b+c) && (b < a+c) && (c < a+b) ){
 		if( (a==b) && (b==c) ){
-			//cout << "Equilateral" << endl;
-			return EQUILATERAL;
+			result = EQUILATERAL;
 		}
 		else if( (a!=b) && (b!=c) && (a!=c) ){
-			//cout << "Scalene" << endl;
-			return SCALENE;
+			result = SCALENE;
 		}
 		else{
-			//cout << "Isosceles" << endl;
-			return ISOSCELES;
+			result = ISOSCELES;
 		}
 	}
 	else{
-		//cout << "Not Triangle" << endl;		
-		return NON_TRIANGLE;
+		result = NON_TRIANGLE;
 	}
+	return result;
 }
