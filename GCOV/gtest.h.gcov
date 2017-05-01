@@ -1,7 +1,7 @@
         -:    0:Source:/home/mnpan/1052Testing/googletest-master/googletest/include/gtest/gtest.h
         -:    0:Graph:../main_test.gcno
         -:    0:Data:../main_test.gcda
-        -:    0:Runs:2
+        -:    0:Runs:1
         -:    0:Programs:1
         -:    1:// Copyright 2005, Google Inc.
         -:    2:// All rights reserved.
@@ -258,7 +258,11 @@
         -:  253://   Expected: Foo() is even
         -:  254://     Actual: it's 5
         -:  255://
-       10:  256:class GTEST_API_ AssertionResult {
+function _ZN7testing15AssertionResultD2Ev called 13 returned 100% blocks executed 100%
+       13:  256:class GTEST_API_ AssertionResult {
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
         -:  257: public:
         -:  258:  // Copy constructor.
         -:  259:  // Used in EXPECT_TRUE/FALSE(assertion_result).
@@ -290,7 +294,8 @@
         -:  285:  }
         -:  286:
         -:  287:  // Returns true iff the assertion succeeded.
-       10:  288:  operator bool() const { return success_; }  // NOLINT
+function _ZNK7testing15AssertionResultcvbEv called 13 returned 100% blocks executed 100%
+       13:  288:  operator bool() const { return success_; }  // NOLINT
         -:  289:
         -:  290:  // Returns the assertion's negation. Used with EXPECT/ASSERT_FALSE.
         -:  291:  AssertionResult operator!() const;
@@ -299,12 +304,20 @@
         -:  294:  // use it when they fail (i.e., the predicate's outcome doesn't match the
         -:  295:  // assertion's expectation). When nothing has been streamed into the
         -:  296:  // object, returns an empty string.
+function _ZNK7testing15AssertionResult7messageEv called 0 returned 0% blocks executed 0%
     #####:  297:  const char* message() const {
     #####:  298:    return message_.get() != NULL ?  message_->c_str() : "";
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
         -:  299:  }
         -:  300:  // TODO(vladl@google.com): Remove this after making sure no clients use it.
         -:  301:  // Deprecated; please use message() instead.
+function _ZNK7testing15AssertionResult15failure_messageEv called 0 returned 0% blocks executed 0%
     #####:  302:  const char* failure_message() const { return message(); }
+call    0 never executed
         -:  303:
         -:  304:  // Streams a custom failure message into this object.
         -:  305:  template <typename T> AssertionResult& operator<<(const T& value) {
@@ -391,7 +404,8 @@
         -:  386:  // test in test case Foo.  Hence a sub-class can define its own
         -:  387:  // SetUpTestCase() method to shadow the one defined in the super
         -:  388:  // class.
-        2:  389:  static void SetUpTestCase() {}
+function _ZN7testing4Test13SetUpTestCaseEv called 1 returned 100% blocks executed 100%
+        1:  389:  static void SetUpTestCase() {}
         -:  390:
         -:  391:  // Tears down the stuff shared by all tests in this test case.
         -:  392:  //
@@ -399,7 +413,8 @@
         -:  394:  // test in test case Foo.  Hence a sub-class can define its own
         -:  395:  // TearDownTestCase() method to shadow the one defined in the super
         -:  396:  // class.
-        2:  397:  static void TearDownTestCase() {}
+function _ZN7testing4Test16TearDownTestCaseEv called 1 returned 100% blocks executed 100%
+        1:  397:  static void TearDownTestCase() {}
         -:  398:
         -:  399:  // Returns true iff the current test has a fatal failure.
         -:  400:  static bool HasFatalFailure();
@@ -476,6 +491,7 @@
         -:  471:  // If you see an error about overriding the following function or
         -:  472:  // about it being private, you have mis-spelled SetUp() as Setup().
         -:  473:  struct Setup_should_be_spelled_SetUp {};
+function _ZN7testing4Test5SetupEv called 0 returned 0% blocks executed 0%
     #####:  474:  virtual Setup_should_be_spelled_SetUp* Setup() { return NULL; }
         -:  475:
         -:  476:  // We disallow copying Tests.
@@ -1377,6 +1393,7 @@
         -: 1372:// frame size of CmpHelperEQ. This helps reduce the overhead of some sanitizers
         -: 1373:// when calling EXPECT_* in a tight loop.
         -: 1374:template <typename T1, typename T2>
+function _ZN7testing8internal18CmpHelperEQFailureIiiEENS_15AssertionResultEPKcS4_RKT_RKT0_ called 0 returned 0% blocks executed 0%
     #####: 1375:AssertionResult CmpHelperEQFailure(const char* lhs_expression,
         -: 1376:                                   const char* rhs_expression,
         -: 1377:                                   const T1& lhs, const T2& rhs) {
@@ -1385,21 +1402,39 @@
         -: 1380:                   FormatForComparisonFailureMessage(lhs, rhs),
         -: 1381:                   FormatForComparisonFailureMessage(rhs, lhs),
     #####: 1382:                   false);
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+call   11 never executed
+call   12 never executed
         -: 1383:}
         -: 1384:
         -: 1385:// The helper function for {ASSERT|EXPECT}_EQ.
         -: 1386:template <typename T1, typename T2>
-       10: 1387:AssertionResult CmpHelperEQ(const char* lhs_expression,
+function _ZN7testing8internal11CmpHelperEQIiiEENS_15AssertionResultEPKcS4_RKT_RKT0_ called 13 returned 100% blocks executed 75%
+       13: 1387:AssertionResult CmpHelperEQ(const char* lhs_expression,
         -: 1388:                            const char* rhs_expression,
         -: 1389:                            const T1& lhs,
         -: 1390:                            const T2& rhs) {
         -: 1391:GTEST_DISABLE_MSC_WARNINGS_PUSH_(4389 /* signed/unsigned mismatch */)
-       10: 1392:  if (lhs == rhs) {
-       10: 1393:    return AssertionSuccess();
+       13: 1392:  if (lhs == rhs) {
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+       13: 1393:    return AssertionSuccess();
+call    0 returned 100%
         -: 1394:  }
         -: 1395:GTEST_DISABLE_MSC_WARNINGS_POP_()
         -: 1396:
     #####: 1397:  return CmpHelperEQFailure(lhs_expression, rhs_expression, lhs, rhs);
+call    0 never executed
         -: 1398:}
         -: 1399:
         -: 1400:// With this overloaded version, we allow anonymous enums to be used
@@ -1419,11 +1454,13 @@
         -: 1414: public:
         -: 1415:  // This templatized version is for the general case.
         -: 1416:  template <typename T1, typename T2>
-        8: 1417:  static AssertionResult Compare(const char* lhs_expression,
+function _ZN7testing8internal8EqHelperILb0EE7CompareIiiEENS_15AssertionResultEPKcS6_RKT_RKT0_ called 9 returned 100% blocks executed 100%
+        9: 1417:  static AssertionResult Compare(const char* lhs_expression,
         -: 1418:                                 const char* rhs_expression,
         -: 1419:                                 const T1& lhs,
         -: 1420:                                 const T2& rhs) {
-        8: 1421:    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
+        9: 1421:    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
+call    0 returned 100%
         -: 1422:  }
         -: 1423:
         -: 1424:  // With this overloaded version, we allow anonymous enums to be used
@@ -1450,7 +1487,8 @@
         -: 1445:  // NOT a pointer, e.g. ASSERT_EQ(0, AnIntFunction()) or
         -: 1446:  // EXPECT_EQ(false, a_bool).
         -: 1447:  template <typename T1, typename T2>
-        2: 1448:  static AssertionResult Compare(
+function _ZN7testing8internal8EqHelperILb1EE7CompareIiiEENS_15AssertionResultEPKcS6_RKT_RKT0_PNS0_8EnableIfIXntsrNS0_10is_pointerISA_EE5valueEE4typeE called 4 returned 100% blocks executed 100%
+        4: 1448:  static AssertionResult Compare(
         -: 1449:      const char* lhs_expression,
         -: 1450:      const char* rhs_expression,
         -: 1451:      const T1& lhs,
@@ -1461,7 +1499,8 @@
         -: 1456:      // to match the Secret* in the other overload, which would otherwise make
         -: 1457:      // this template match better.
         -: 1458:      typename EnableIf<!is_pointer<T2>::value>::type* = 0) {
-        2: 1459:    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
+        4: 1459:    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
+call    0 returned 100%
         -: 1460:  }
         -: 1461:
         -: 1462:  // This version will be picked when the second argument to ASSERT_EQ() is a
@@ -2234,8 +2273,11 @@
         -: 2229:// namespace and has an all-caps name.
         -: 2230:int RUN_ALL_TESTS() GTEST_MUST_USE_RESULT_;
         -: 2231:
-        2: 2232:inline int RUN_ALL_TESTS() {
-        2: 2233:  return ::testing::UnitTest::GetInstance()->Run();
+function _Z13RUN_ALL_TESTSv called 1 returned 100% blocks executed 100%
+        1: 2232:inline int RUN_ALL_TESTS() {
+        1: 2233:  return ::testing::UnitTest::GetInstance()->Run();
+call    0 returned 100%
+call    1 returned 100%
         -: 2234:}
         -: 2235:
         -: 2236:#endif  // GTEST_INCLUDE_GTEST_GTEST_H_

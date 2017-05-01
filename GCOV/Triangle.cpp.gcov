@@ -1,7 +1,7 @@
         -:    0:Source:Triangle/Triangle.cpp
         -:    0:Graph:../main_test.gcno
         -:    0:Data:../main_test.gcda
-        -:    0:Runs:2
+        -:    0:Runs:1
         -:    0:Programs:1
         -:    1:/*EOF*/
         -:    2:/*EOF*/
@@ -13,23 +13,52 @@
         -:    8:/*EOF*/
         -:    9:/*EOF*/
         -:   10:/*EOF*/
-       10:   11:/*EOF*/
-       10:   12:/*EOF*/
-       10:   13:/*EOF*/
-        2:   14:/*EOF*/
+function _Z8Triangleiii called 13 returned 100% blocks executed 100%
+       13:   11:/*EOF*/
+       13:   12:/*EOF*/
+       13:   13:/*EOF*/
+branch  0 taken 85% (fallthrough)
+branch  1 taken 15%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+branch  4 taken 91% (fallthrough)
+branch  5 taken 9%
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0%
+branch  8 taken 90% (fallthrough)
+branch  9 taken 10%
+branch 10 taken 0% (fallthrough)
+branch 11 taken 100%
+        4:   14:/*EOF*/
         -:   15:/*EOF*/
-        8:   16:/*EOF*/
-       12:   17:/*EOF*/
+        9:   16:/*EOF*/
+branch  0 taken 89% (fallthrough)
+branch  1 taken 11%
+branch  2 taken 88% (fallthrough)
+branch  3 taken 13%
+branch  4 taken 71% (fallthrough)
+branch  5 taken 29%
+       10:   17:/*EOF*/
+branch  0 taken 60% (fallthrough)
+branch  1 taken 40%
+branch  2 taken 67% (fallthrough)
+branch  3 taken 33%
         2:   18:/*EOF*/
         -:   19:/*EOF*/
-        4:   20:/*EOF*/
+        3:   20:/*EOF*/
+branch  0 taken 67% (fallthrough)
+branch  1 taken 33%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0%
         2:   21:/*EOF*/
         -:   22:/*EOF*/
         -:   23:/*EOF*/
-        2:   24:/*EOF*/
+        1:   24:/*EOF*/
         -:   25:/*EOF*/
         -:   26:/*EOF*/
         -:   27:/*EOF*/
-        2:   28:/*EOF*/
+        4:   28:/*EOF*/
         -:   29:/*EOF*/
-       10:   30:/*EOF*/
+       13:   30:/*EOF*/

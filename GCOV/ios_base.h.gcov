@@ -1,7 +1,7 @@
         -:    0:Source:/usr/include/c++/5/bits/ios_base.h
         -:    0:Graph:../main_test.gcno
         -:    0:Data:../main_test.gcda
-        -:    0:Runs:2
+        -:    0:Runs:1
         -:    0:Programs:1
         -:    1:// Iostreams base classes -*- C++ -*-
         -:    2:
@@ -131,8 +131,9 @@
         -:  126:  { return _Ios_Openmode(static_cast<int>(__a) & static_cast<int>(__b)); }
         -:  127:
         -:  128:  inline _GLIBCXX_CONSTEXPR _Ios_Openmode
-       86:  129:  operator|(_Ios_Openmode __a, _Ios_Openmode __b)
-       86:  130:  { return _Ios_Openmode(static_cast<int>(__a) | static_cast<int>(__b)); }
+function _ZStorSt13_Ios_OpenmodeS_ called 44 returned 100% blocks executed 100%
+       44:  129:  operator|(_Ios_Openmode __a, _Ios_Openmode __b)
+       44:  130:  { return _Ios_Openmode(static_cast<int>(__a) | static_cast<int>(__b)); }
         -:  131:
         -:  132:  inline _GLIBCXX_CONSTEXPR _Ios_Openmode
         -:  133:  operator^(_Ios_Openmode __a, _Ios_Openmode __b)
