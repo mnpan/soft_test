@@ -9,9 +9,10 @@ using namespace std;
 int NextDate( int year, int month, int day){
 	bool is_leap = false;
 	int m_type;
+	bool is_invalid = false;
 	
 	if( (year < 1812) || (year > 2012)){
-		return INVALID_DATE;
+		is_invalid = true;
 	}
 	else if( (year % 4) == 0 && ((year % 100) != 0 || (year % 400) == 0)){
 		is_leap = true; 
@@ -21,20 +22,20 @@ int NextDate( int year, int month, int day){
 	}
 	
 	if( (month < 1) || (month > 12) || (day < 1)){
-		return INVALID_DATE;
+		is_invalid = true;
 	}
 	else if( month == 2){
 		if( ( is_leap && (day > 29)) || ( !is_leap && (day > 28))){
-			return INVALID_DATE;
+			is_invalid = true;
 		}
 		m_type = FEB;
 	}
 	else if( (month <= 7 && month%2 == 0) || (month >= 8 && month%2 == 1)){
-		if( day > 30)	return INVALID_DATE;
+		if( day > 30)	is_invalid = true;
 		m_type = SMALL;
 	}
 	else{
-		if( day > 31)	return INVALID_DATE;
+		if( day > 31)	is_invalid = true;
 		m_type = LARGE;
 	}
 	
@@ -65,7 +66,8 @@ int NextDate( int year, int month, int day){
 		year += 1;
 	}
 	
-	return year*10000 + month*100 + day;
+	if( is_invalid )	return -1;
+	else 			return year*10000 + month*100 + day;
 }
 
 /*int main(void){
