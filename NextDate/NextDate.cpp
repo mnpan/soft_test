@@ -31,11 +31,13 @@ int NextDate( int year, int month, int day){
 		m_type = FEB;
 	}
 	else if( (month <= 7 && month%2 == 0) || (month >= 8 && month%2 == 1)){
-		if( day > 30)	is_invalid = true;
+		if( day > 30)	
+			is_invalid = true;
 		m_type = SMALL;
 	}
 	else{
-		if( day > 31)	is_invalid = true;
+		if( day > 31)	
+			is_invalid = true;
 		m_type = LARGE;
 	}
 	
@@ -66,8 +68,10 @@ int NextDate( int year, int month, int day){
 		year += 1;
 	}
 	
-	if( is_invalid )	return -1;
-	else 			return year*10000 + month*100 + day;
+	if( is_invalid )	
+		return INVALID_DATE;
+	else 			
+		return year*10000 + month*100 + day;
 }
 
 /*int main(void){
