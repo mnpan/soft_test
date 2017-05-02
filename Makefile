@@ -10,4 +10,4 @@ init:
 	ar -rv libgtest.a gtest-all.o
 
 gcov: gtest-all.o libgtest.a
-	g++ -isystem ${GTEST_DIR}/include -pthread $(GCOV_FLAG) main_test.cpp libgtest.a -o GCOV/coverage
+	g++ -isystem ${GTEST_DIR}/include -pthread $(GCOV_FLAG) main_test.cpp libgtest.a -o coverage
