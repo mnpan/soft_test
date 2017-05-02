@@ -44,19 +44,19 @@ int NextDate( int year, int month, int day){
 	day += 1;
 	switch( m_type){
 		case SMALL:
-			if(day == 31){
+			if(day >= 31){
 				day = 1;
 				month += 1;
 			}
 			break;
 		case LARGE:
-			if(day == 32){
+			if(day >= 32){
 				day = 1;
 				month += 1;
 			}
 			break;
 		case FEB:
-			if( (is_leap && (day == 30)) || (!is_leap && (day == 29))){
+			if( (is_leap && (day >= 30)) || (!is_leap && (day >= 29))){
 				day = 1;
 				month += 1;
 			}
