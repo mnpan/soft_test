@@ -1,5 +1,5 @@
-#define OUT_RANGED 0
-#define TERMINAL -1
+#define OUT_RANGED -1
+#define TERMINAL 0
 
 double Commission( int lock, int stock, int barrel){
 	if( lock == -1){
