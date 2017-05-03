@@ -258,7 +258,7 @@
         -:  253://   Expected: Foo() is even
         -:  254://     Actual: it's 5
         -:  255://
-       11:  256:class GTEST_API_ AssertionResult {
+       22:  256:class GTEST_API_ AssertionResult {
         -:  257: public:
         -:  258:  // Copy constructor.
         -:  259:  // Used in EXPECT_TRUE/FALSE(assertion_result).
@@ -290,7 +290,7 @@
         -:  285:  }
         -:  286:
         -:  287:  // Returns true iff the assertion succeeded.
-       11:  288:  operator bool() const { return success_; }  // NOLINT
+       22:  288:  operator bool() const { return success_; }  // NOLINT
         -:  289:
         -:  290:  // Returns the assertion's negation. Used with EXPECT/ASSERT_FALSE.
         -:  291:  AssertionResult operator!() const;
@@ -1389,13 +1389,13 @@
         -: 1384:
         -: 1385:// The helper function for {ASSERT|EXPECT}_EQ.
         -: 1386:template <typename T1, typename T2>
-       11: 1387:AssertionResult CmpHelperEQ(const char* lhs_expression,
+       22: 1387:AssertionResult CmpHelperEQ(const char* lhs_expression,
         -: 1388:                            const char* rhs_expression,
         -: 1389:                            const T1& lhs,
         -: 1390:                            const T2& rhs) {
         -: 1391:GTEST_DISABLE_MSC_WARNINGS_PUSH_(4389 /* signed/unsigned mismatch */)
-       11: 1392:  if (lhs == rhs) {
-       11: 1393:    return AssertionSuccess();
+       22: 1392:  if (lhs == rhs) {
+       22: 1393:    return AssertionSuccess();
         -: 1394:  }
         -: 1395:GTEST_DISABLE_MSC_WARNINGS_POP_()
         -: 1396:
@@ -1419,11 +1419,11 @@
         -: 1414: public:
         -: 1415:  // This templatized version is for the general case.
         -: 1416:  template <typename T1, typename T2>
-       10: 1417:  static AssertionResult Compare(const char* lhs_expression,
+       22: 1417:  static AssertionResult Compare(const char* lhs_expression,
         -: 1418:                                 const char* rhs_expression,
         -: 1419:                                 const T1& lhs,
         -: 1420:                                 const T2& rhs) {
-       10: 1421:    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
+       22: 1421:    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
         -: 1422:  }
         -: 1423:
         -: 1424:  // With this overloaded version, we allow anonymous enums to be used
@@ -1450,7 +1450,7 @@
         -: 1445:  // NOT a pointer, e.g. ASSERT_EQ(0, AnIntFunction()) or
         -: 1446:  // EXPECT_EQ(false, a_bool).
         -: 1447:  template <typename T1, typename T2>
-        1: 1448:  static AssertionResult Compare(
+        -: 1448:  static AssertionResult Compare(
         -: 1449:      const char* lhs_expression,
         -: 1450:      const char* rhs_expression,
         -: 1451:      const T1& lhs,
@@ -1461,7 +1461,7 @@
         -: 1456:      // to match the Secret* in the other overload, which would otherwise make
         -: 1457:      // this template match better.
         -: 1458:      typename EnableIf<!is_pointer<T2>::value>::type* = 0) {
-        1: 1459:    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
+        -: 1459:    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
         -: 1460:  }
         -: 1461:
         -: 1462:  // This version will be picked when the second argument to ASSERT_EQ() is a

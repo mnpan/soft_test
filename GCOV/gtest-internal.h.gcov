@@ -475,7 +475,7 @@
         -:  470:  virtual Test* CreateTest() = 0;
         -:  471:
         -:  472: protected:
-        2:  473:  TestFactoryBase() {}
+        3:  473:  TestFactoryBase() {}
         -:  474:
         -:  475: private:
         -:  476:  GTEST_DISALLOW_COPY_AND_ASSIGN_(TestFactoryBase);
@@ -484,9 +484,9 @@
         -:  479:// This class provides implementation of TeastFactoryBase interface.
         -:  480:// It is used in TEST and TEST_F macros.
         -:  481:template <class TestClass>
-        2:  482:class TestFactoryImpl : public TestFactoryBase {
+        3:  482:class TestFactoryImpl : public TestFactoryBase {
         -:  483: public:
-        2:  484:  virtual Test* CreateTest() { return new TestClass; }
+        3:  484:  virtual Test* CreateTest() { return new TestClass; }
         -:  485:};
         -:  486:
         -:  487:#if GTEST_OS_WINDOWS
@@ -506,8 +506,8 @@
         -:  501:typedef void (*SetUpTestCaseFunc)();
         -:  502:typedef void (*TearDownTestCaseFunc)();
         -:  503:
-        4:  504:struct CodeLocation {
-        2:  505:  CodeLocation(const string& a_file, int a_line) : file(a_file), line(a_line) {}
+        6:  504:struct CodeLocation {
+        3:  505:  CodeLocation(const string& a_file, int a_line) : file(a_file), line(a_line) {}
         -:  506:
         -:  507:  string file;
         -:  508:  int line;
