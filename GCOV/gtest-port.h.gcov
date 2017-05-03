@@ -1132,7 +1132,7 @@
         -: 1127:  typedef T element_type;
         -: 1128:
         -: 1129:  explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
-       60: 1130:  ~scoped_ptr() { reset(); }
+       50: 1130:  ~scoped_ptr() { reset(); }
         -: 1131:
         -: 1132:  T& operator*() const { return *ptr_; }
     #####: 1133:  T* operator->() const { return ptr_; }
@@ -1144,14 +1144,14 @@
         -: 1139:    return ptr;
         -: 1140:  }
         -: 1141:
-       60: 1142:  void reset(T* p = NULL) {
-       60: 1143:    if (p != ptr_) {
-       44: 1144:      if (IsTrue(sizeof(T) > 0)) {  // Makes sure T is a complete type.
-       44: 1145:        delete ptr_;
+       50: 1142:  void reset(T* p = NULL) {
+       50: 1143:    if (p != ptr_) {
+       43: 1144:      if (IsTrue(sizeof(T) > 0)) {  // Makes sure T is a complete type.
+       43: 1145:        delete ptr_;
         -: 1146:      }
-       44: 1147:      ptr_ = p;
+       43: 1147:      ptr_ = p;
         -: 1148:    }
-       60: 1149:  }
+       50: 1149:  }
         -: 1150:
         -: 1151:  friend void swap(scoped_ptr& a, scoped_ptr& b) {
         -: 1152:    using std::swap;
