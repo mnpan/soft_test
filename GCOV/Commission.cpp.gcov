@@ -6,27 +6,46 @@
         -:    1:/*EOF*/
         -:    2:/*EOF*/
         -:    3:/*EOF*/
+function _Z10Commissioniii called 11 returned 100% blocks executed 100%
        11:    4:/*EOF*/
        11:    5:/*EOF*/
+branch  0 taken 9% (fallthrough)
+branch  1 taken 91%
         1:    6:/*EOF*/
         -:    7:/*EOF*/
        10:    8:/*EOF*/
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 20% (fallthrough)
+branch  3 taken 80%
         2:    9:/*EOF*/
         -:   10:/*EOF*/
         -:   11:/*EOF*/
         8:   12:/*EOF*/
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 25% (fallthrough)
+branch  3 taken 75%
         2:   13:/*EOF*/
         -:   14:/*EOF*/
         -:   15:/*EOF*/
         6:   16:/*EOF*/
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 33% (fallthrough)
+branch  3 taken 67%
         2:   17:/*EOF*/
         -:   18:/*EOF*/
         -:   19:/*EOF*/
         4:   20:/*EOF*/
         4:   21:/*EOF*/
+branch  0 taken 25% (fallthrough)
+branch  1 taken 75%
         1:   22:/*EOF*/
         -:   23:/*EOF*/
         3:   24:/*EOF*/
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
         1:   25:/*EOF*/
         -:   26:/*EOF*/
         -:   27:/*EOF*/
