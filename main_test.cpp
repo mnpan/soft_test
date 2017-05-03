@@ -2,8 +2,8 @@
 //#include "NextDate/NextDate_UnitTest.cpp"
 //#include "Commission/Commission_UnitTest.cpp"
 //#include "Triangle/Triangle_PathTest.cpp"
-#include "NextDate/NextDate_PathTest.cpp"
-//#include "Commission/Commission_PathTest.cpp"
+//#include "NextDate/NextDate_PathTest.cpp"
+#include "Commission/Commission_PathTest.cpp"
 #include <gtest/gtest.h>
 
 int main( int argc, char** argv){
